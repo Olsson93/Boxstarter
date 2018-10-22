@@ -31,3 +31,6 @@ choco install -y visualstudio2017-workload-netcoretools
 choco install -y visualstudio2017-workload-universal
 choco install -y visualstudio2017-workload-netcrossplat
 choco install -y visualstudio2017-workload-netcoretools
+
+#fabric sdk
+choco install Service Fabric SDK 3.2.176
