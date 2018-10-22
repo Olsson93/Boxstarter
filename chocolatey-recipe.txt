@@ -18,9 +18,7 @@ choco install mongodb
 choco install git
 
 #Android SDK
-choco install android-sdk --version 25.2.3.1
 choco install android-sdk
-choco upgrade android-sdk
 
 #Visual Studio 2017
 choco install -y visualstudio2017enterprise --package-parameters --add netweb
