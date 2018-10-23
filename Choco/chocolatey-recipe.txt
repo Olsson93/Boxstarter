@@ -1,0 +1,34 @@
+#utilities
+choco install treesizefree
+choco install virtualclonedrive
+
+#sql
+choco install mssql2014express-defaultinstance
+
+#node.js
+choco install nodejs
+
+#Visual Studio
+choco install visualstudio2015professional
+
+#mongodb
+choco install mongodb
+
+#git
+choco install git
+
+#Android SDK
+choco install android-sdk --version 25.2.3.1
+choco install android-sdk
+
+#Visual Studio 2017
+choco install -y visualstudio2017enterprise --package-parameters --add netweb
+choco install -y visualstudio2017enterprise
+choco install -y visualstudio2017-workload-netweb
+choco install -y visualstudio2017-workload-node
+choco install -y visualstudio2017-workload-manageddesktop
+choco install -y visualstudio2017-workload-azure
+choco install -y visualstudio2017-workload-netcoretools
+choco install -y visualstudio2017-workload-universal
+choco install -y visualstudio2017-workload-netcrossplat
+choco install -y visualstudio2017-workload-netcoretools
