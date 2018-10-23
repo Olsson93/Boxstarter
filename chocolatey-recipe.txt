@@ -21,7 +21,6 @@ choco install git
 choco install android-sdk
 
 #Visual Studio 2017
-choco install -y visualstudio2017enterprise --package-parameters --add netweb
 choco install -y visualstudio2017enterprise
 choco install -y visualstudio2017-workload-netweb
 choco install -y visualstudio2017-workload-node
