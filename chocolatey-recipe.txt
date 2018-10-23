@@ -12,7 +12,7 @@ choco install treesizefree
 choco install virtualclonedrive
 
 #sql
-choco install mssqlserver2014express
+choco install -y mssqlserver2014express
 
 #node.js
 choco install nodejs
@@ -21,7 +21,7 @@ choco install nodejs
 choco install visualstudio2015professional
 
 #mongodb
-choco install mongodb.install
+choco install -y mongodb.install
 
 #git
 choco install git
