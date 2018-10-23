@@ -1,9 +1,18 @@
+# Boxstarter options
+$Boxstarter.RebootOk=$true # Allow reboots?
+$Boxstarter.NoPassword=$false # Is this a machine with no login password?
+$Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
+
+# Update Windows and reboot if necessary
+Install-WindowsUpdate -AcceptEula
+if (Test-PendingReboot) { Invoke-Reboot }
+
 #utilities
 choco install treesizefree
 choco install virtualclonedrive
 
 #sql
-choco install mssql2014express-defaultinstance
+choco install -y mssqlserver2014express
 
 #node.js
 choco install nodejs
@@ -12,23 +21,21 @@ choco install nodejs
 choco install visualstudio2015professional
 
 #mongodb
-choco install mongodb
+choco install -y mongodb
 
 #git
 choco install git
 
 #Android SDK
-choco install android-sdk --version 25.2.3.1
 choco install android-sdk
 
 #Visual Studio 2017
-choco install -y visualstudio2017enterprise --package-parameters --add netweb
 choco install -y visualstudio2017enterprise
 choco install -y visualstudio2017-workload-netweb
 choco install -y visualstudio2017-workload-node
 choco install -y visualstudio2017-workload-manageddesktop
 choco install -y visualstudio2017-workload-azure
 choco install -y visualstudio2017-workload-netcoretools
-choco install -y visualstudio2017-workload-universal
-choco install -y visualstudio2017-workload-netcrossplat
-choco install -y visualstudio2017-workload-netcoretools
+
+#fabric sdk
+# choco install Service Fabric SDK 3.2.176
