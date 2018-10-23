@@ -12,7 +12,7 @@ choco install nodejs
 choco install visualstudio2015professional
 
 #mongodb
-choco install mongodb
+choco install mongodb.install
 
 #git
 choco install git
@@ -27,9 +27,6 @@ choco install -y visualstudio2017-workload-node
 choco install -y visualstudio2017-workload-manageddesktop
 choco install -y visualstudio2017-workload-azure
 choco install -y visualstudio2017-workload-netcoretools
-choco install -y visualstudio2017-workload-universal
-choco install -y visualstudio2017-workload-netcrossplat
-choco install -y visualstudio2017-workload-netcoretools
 
 #fabric sdk
-choco install Service Fabric SDK 3.2.176
+# choco install Service Fabric SDK 3.2.176
