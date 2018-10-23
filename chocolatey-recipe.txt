@@ -12,7 +12,7 @@ choco install treesizefree
 choco install virtualclonedrive
 
 #sql
-choco install sql-server-express
+choco install mssqlserver2014express
 
 #node.js
 choco install nodejs
