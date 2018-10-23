@@ -21,7 +21,7 @@ choco install nodejs
 choco install visualstudio2015professional
 
 #mongodb
-choco install -y mongodb.install
+choco install -y mongodb
 
 #git
 choco install git
