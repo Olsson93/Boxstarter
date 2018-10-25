@@ -4,6 +4,6 @@
  # Install development editors
 choco install -y notepadplusplus
 
-choco install -y aztecsqlserver
+choco install aztecsqlserver -source "'http://so-web1/chocolatey/nuget'" -y
 
-choco install -y mongo
+choco install -y mongo -source "'http://so-web1/chocolatey/nuget'" -y
