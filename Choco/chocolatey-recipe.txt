@@ -1,5 +1,5 @@
 #Add Zonal's internal Chocolatey repo
- choco source add -n=ZonalChocolate -s="http://rdapps/Chocolatey/nuget";
+ choco source add -n=ZonalChocolate -s="http://so-web1/Chocolatey/nuget";
  
  # Install development editors
 choco install -y notepadplusplus
