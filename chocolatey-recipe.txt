@@ -3,6 +3,9 @@ $Boxstarter.RebootOk=$true # Allow reboots?
 $Boxstarter.NoPassword=$false # Is this a machine with no login password?
 $Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
 
+#Add Zonal's internal Chocolatey repo
+ choco source add -n=ZonalChocolate -s="http://so-web1/Chocolatey/nuget";
+
 # Update Windows and reboot if necessary
 Install-WindowsUpdate -AcceptEula
 if (Test-PendingReboot) { Invoke-Reboot }
@@ -11,17 +14,11 @@ if (Test-PendingReboot) { Invoke-Reboot }
 choco install treesizefree
 choco install virtualclonedrive
 
-#sql
-choco install -y mssqlserver2014express
-
 #node.js
 choco install nodejs
 
 #Visual Studio
 choco install visualstudio2015professional
-
-#mongodb
-choco install -y mongodb
 
 #git
 choco install git
@@ -38,4 +35,11 @@ choco install -y visualstudio2017-workload-azure
 choco install -y visualstudio2017-workload-netcoretools
 
 #fabric sdk
-# choco install Service Fabric SDK 3.2.176
+#choco install Service Fabric SDK 3.2.176
+
+ # Install development editors
+choco install -y notepadplusplus
+
+choco install aztecsqlserver -source "'http://so-web1/chocolatey/nuget'" -y
+
+choco install -y mongo -source "'http://so-web1/chocolatey/nuget'" -y
